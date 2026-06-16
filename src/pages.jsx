@@ -66,7 +66,7 @@ const CAT_IMGS = {
   chain:    'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?w=400',
   necklace: 'https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?w=400',
   ring:     'https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=400',
-  bracelet: 'https://images.unsplash.com/photo-1573408301185-9519f94815b5?w=400',
+  bracelet: 'https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=400',
   earring:  'https://images.unsplash.com/photo-1535556116002-6281ff3e9f36?w=400',
 }
 
