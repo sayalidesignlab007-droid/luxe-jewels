@@ -316,11 +316,10 @@ export function ShopPage() {
   const [search, setSearch]       = useState('')
   const [sidebarOpen, setSB]      = useState(false)
 
-  useEffect(() => {
+ useEffect(() => {
     const c = sp.get('cat')
     setFilters(f => ({ ...f, cat: c || 'all' }))
   }, [sp])
-
   const list = useMemo(() => {
     let l = [...PRODUCTS]
     if (filters.cat !== 'all') l = l.filter(p => p.cat === filters.cat)
