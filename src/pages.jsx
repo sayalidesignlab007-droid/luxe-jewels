@@ -317,7 +317,8 @@ export function ShopPage() {
   const [sidebarOpen, setSB]      = useState(false)
 
   useEffect(() => {
-    const c = sp.get('cat'); if (c) setFilters(f => ({ ...f, cat: c }))
+    const c = sp.get('cat')
+    setFilters(f => ({ ...f, cat: c || 'all' }))
   }, [sp])
 
   const list = useMemo(() => {
