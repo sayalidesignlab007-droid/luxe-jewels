@@ -677,9 +677,11 @@ function Footer() {
           <div>
             <h4 className="footer-h">Shop</h4>
             <div className="footer-links">
-              {['Chains', 'Necklaces', 'Rings', 'Bracelets', 'Earrings'].map(c => (
-                <Link key={c} to={`/shop?cat=${c.toLowerCase()}`}>{c}</Link>
-              ))}
+             {[
+              ['Chains','chain'], ['Necklaces','necklace'], ['Rings','ring'], ['Bracelets','bracelet'], ['Earrings','earring']
+              ].map(([label, key]) => (
+             <Link key={key} to={`/shop?cat=${key}`}>{label}</Link>
+             ))}
             </div>
           </div>
           <div>
