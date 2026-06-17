@@ -544,6 +544,17 @@ export function ToastProvider({ children }) {
 export const useToast = () => useContext(ToastCtx)
 
 /* ══════════════════════════════════════════════
+   SCROLL TO TOP
+══════════════════════════════════════════════ */
+function ScrollToTop() {
+  const { pathname } = useLocation()
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [pathname])
+  return null
+}
+
+/* ══════════════════════════════════════════════
    NAVBAR
 ══════════════════════════════════════════════ */
 function Navbar() {
@@ -717,6 +728,7 @@ export default function App() {
       <ToastProvider>
         <CartProvider>
           <Loader />
+           <ScrollToTop />
           <Navbar />
           <CartDrawer />
           <main style={{ paddingTop: 0 }}>
